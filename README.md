@@ -1,2 +1,2 @@
-# Desaf-o_Grid
+# Desafio_Grid
 implementacion de grilla para e-commerce
