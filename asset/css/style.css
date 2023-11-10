@@ -75,6 +75,7 @@ body {
     justify-content: center;
     align-items: center;
     font-weight: 100;
+    text-align: center;
 }
 .layout {
     display: grid;
