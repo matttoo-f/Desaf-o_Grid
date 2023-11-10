@@ -1,0 +1,135 @@
+body {
+    background-color: rgb(168, 168, 168);
+    color: white;
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Roboto';
+}
+.header {
+    background-color: rgb(22, 20, 20);
+    grid-area: header;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.header h3 {
+    margin: 0%;
+    padding: 0;
+}
+.header p {
+    margin: 0%;
+}
+.layout-sidebar {
+    background-color:  rgb(73, 72, 72);
+    grid-area: sidebar;
+    padding: 20px;
+}
+.layout-sidebar h3 {
+    font-size: 16px;
+    margin: 0%;
+    color: rgb(231, 229, 229);
+}
+.layout-sidebar ul{
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+}
+.layout-sidebar li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-weight: 400;
+}
+.layout-sidebar a {
+    text-decoration: none;
+    color: rgb(211, 210, 210);
+}
+.cantidad {
+    font-weight: 100;
+    margin-left: 10px;
+}
+.layout-main {
+    background-color: rgb(73, 72, 72);
+    grid-area: main;
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 20px;
+    padding: 20px;
+    justify-content: space-around;
+    align-items: center;
+}
+@media screen and (max-width:480px) {
+    .layout-main {
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:768px) {
+    .layout-main {
+        grid-template-columns: 1fr;
+    }
+}
+.layout-footer {
+    background-color: rgb(0, 0, 0);
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 100;
+}
+.layout {
+    display: grid;
+    grid-template-areas:
+    'header header header header'
+    'sidebar main main main'
+    'footer footer footer footer';
+    height: 100vh;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 4em 1fr 4em;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    width: 30vh;
+    height: 20em; 
+    background-color: rgb(180, 180, 182);
+    border-radius: 3%;
+    padding: 10px;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.card img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 3%;
+}
+.card h4 {
+    color: rgb(41, 40, 40);
+    margin: 0;
+    padding: 0;
+    margin-top: 10px;
+    font-size: 25px;
+
+}
+.card p {
+    color: rgb(41, 40, 40);
+    font-weight: lighter;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    margin-top: 10px;
+}
+.btn {
+    text-decoration: none ;
+    color: white;
+    background-color: blue;
+    padding: 10px;
+    border-radius: 5%;
+}
+.btn:hover {
+    background-color: rgb(150, 150, 241);
+    color: rgb(57, 57, 110);
+}
